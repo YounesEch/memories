@@ -1,0 +1,57 @@
+body {
+margin: 0;
+padding: 0;
+}
+
+
+hr{
+  color: black;
+  background-color: grey;
+  height: 3px;
+  position: relative;
+}
+
+h1{
+  text-transform: uppercase;
+}
+
+
+.menu{
+  border: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: end;
+}
+
+
+nav{
+  display: none;
+  width: 70%;
+}
+
+a{
+  text-decoration: none;
+  font-size: 50px;
+  display: flex;
+  color: black;
+  text-transform: uppercase;
+  justify-content: center;
+  padding: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+.imgTablet {
+  display: none;
+}
+
+.imgDesktop {
+  display: none;
+}

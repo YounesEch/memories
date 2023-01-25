@@ -46,11 +46,18 @@ h1{
 
 .menu{
   z-index: 2;
-  color: red;
-  background: black;
+  border: 0;
+  background-color: transparent;
   position: relative;
   left: 10rem;
   height: 50px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.menu:a{
+  transform: rotateX(160'angle');
 }
 
 .menu.active{
@@ -90,7 +97,6 @@ a{
 
 .container1{
   width: 284px;
-  height: 204px;
   margin-left: 19px;
   margin-right: 11rem;
   font-size: 33px;
@@ -113,12 +119,12 @@ a{
 
 .container2{
   width: 292px;
-  height: 135px;
-  margin-left: 120px;
+  margin-left: 100px;
   font-size: 16px;
   line-height: 19.2px;
   font-weight: 350;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .buttonDesktop {
@@ -138,6 +144,7 @@ a{
   margin-right: 6rem;
   font-weight: 350;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .imgMobile{

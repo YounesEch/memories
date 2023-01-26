@@ -12,6 +12,7 @@ body {
     background-color: black;
     height: 3px;
     margin: 0;
+    z-index: 1;
   }
   
   h1{
@@ -57,11 +58,12 @@ body {
     border: 0;
     background-color: transparent;
     position: relative;
-    left: 10rem;
+    left: 9rem;
     height: 50px;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
+    top: -8px;
   }
   
   .menu:hover{

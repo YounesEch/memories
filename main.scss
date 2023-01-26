@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  height: 100vh;
   }
   
   .headerContainer{
@@ -13,6 +14,10 @@ body {
     height: 3px;
     margin: 0;
     z-index: 1;
+  }
+
+  .cookies{
+    display: none;
   }
   
   h1{
@@ -58,20 +63,17 @@ body {
     border: 0;
     background-color: transparent;
     position: relative;
-    left: 9rem;
-    height: 50px;
+    left: 7rem;
+    height: 77px;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
-    top: -8px;
+    top: -23px;
+    width: 53px;
   }
   
-  .menu:hover{
+  .menu:onclick{
     transform: rotateX(160'angle');
-  }
-  
-  .menu.active{
-    background-color: white;
   }
   
   .active{
@@ -80,16 +82,12 @@ body {
   
   nav{
     width: 70%;
-    min-height: 100vh;
+    min-height: 109vh;
     background-color: #fff;
     right: 0;
     position: absolute;
     z-index: 1;
-  }
-  
-  .exit{
-    right: 0;
-    position: relative;
+    border: 3px solid black;
   }
   
   a{
@@ -269,16 +267,61 @@ body {
     margin-left: 324px;
   }
   
-  
+
   
   }
   
   
   
   @media screen and (min-width: 1512px) {
-  
+    
+
+    .wrapper{
+      position: relative;
+      bottom: 45rem;
+      background-color: black;
+      opacity: 80%;
+      min-height: 100vh;
+      z-index: 1;
+      margin: 0;
+    }
+
+    .cookies{
+      display: block;
+      border: 1px solid black;
+      width: 480px;
+      height: 247px;
+      border-radius: 5%;
+      text-align: center;
+      background-color: white;
+      position: relative;
+      left: 35vw;
+      z-index: 1;
+      margin-right: 0;
+      top: 21rem;
+    }
+    
+    .accept{
+      height: 36px;
+      width: 65px;
+      background-color:#B30044;
+      color: yellow;
+      border-radius: 10%; 
+      align-items: center;
+    }
+
+    .reject{
+      height: 36px;
+      width: 65px;
+      background-color: #FF4B93;
+      color: white;
+      border-radius: 10%;
+      align-items: center;
+    }
+
     hr{
       z-index: 1;
+      position: relative;
     }
     .container1{
       width: 418px;
@@ -396,13 +439,14 @@ body {
       color: rgb(241, 10, 241);
       font-weight: bold;
     }
-  
+    
     footer{
       display: block;
       position: relative;
-      top: 10vh;
-      background-color: black;
+      bottom: 244vh;
+      background-color: #000;
       height: 144px;
+      top: 6rem;
     }
   
     h5{
@@ -448,8 +492,8 @@ body {
     }
   
     .sign:hover{
-      color: white;
       background-color: green;
+      color: white;
     }
     
     .rectangleFooter{

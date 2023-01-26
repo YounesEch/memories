@@ -1,11 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  
   }
   
   .headerContainer{
     display: flex;
+    height: 28px;
   }
   
   hr{
@@ -20,6 +20,7 @@ body {
     line-height: 48px;
     margin: 0;
     margin-left: 15px;
+    margin-top: -10px;
   }
   
   .rectangle{
@@ -63,7 +64,7 @@ body {
     font-size: 40px;
   }
   
-  .menu:a{
+  .menu:hover{
     transform: rotateX(160'angle');
   }
   
@@ -322,7 +323,7 @@ body {
   
     .rectangleTablet{
       left: 9rem;
-      top: -7rem;
+      top: 0rem;
     }
   
     .rectangle3{

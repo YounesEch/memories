@@ -1,9 +1,42 @@
+
 body {
   margin: 0;
   padding: 0;
   height: 100vh;
   }
   
+
+  @font-face {
+    font-family: Heading;
+    src: url(./assets/fonts/Heading.otf);
+  }
+
+  @font-face {
+    font-family: heroText;
+    src: url(./assets/fonts/HeroText.otf);
+  }
+
+  @font-face {
+    font-family: firstText;
+    src: url(./assets/fonts/text1Kyiv.otf);
+  }
+
+  @font-face {
+    font-family: pageText;
+    src: url(./assets/fonts/textKyiv.otf);
+  }
+
+  @font-face {
+    font-family: BoldFont;
+    src: url(./assets/fonts/buyKyiv.otf);
+  }
+
+  @font-face {
+    font-family: cookiesFont;
+    src: url(./assets/fonts/cookieText.otf);
+  }
+
+
   .headerContainer{
     display: flex;
     height: 50px;
@@ -26,6 +59,7 @@ body {
     line-height: 48px;
     margin: 0;
     margin-left: 15px;
+    font-family: Heading;
   }
  
   
@@ -80,6 +114,8 @@ body {
     font-size: 33px;
     line-height: 39.6px;
     height: 204px;
+    font-family: firstText;
+    font-weight: 600;
   }
   
   .empText{
@@ -101,6 +137,7 @@ body {
     line-height: 19.2px;
     font-weight: 350;
     height: 135px;
+    font-family: pageText;
   }
   
   .buttonDesktop {
@@ -117,6 +154,7 @@ body {
     margin-left: 8px;
     font-size: 16px;
     line-height: 19.2px;
+    font-family: pageText;
   }
   
   .imgMobile{
@@ -130,6 +168,7 @@ body {
     margin-left: 120px;
     font-size: 16px;
     line-height: 19.2px;
+    font-family: pageText;
     font-weight: 350;
   }
   
@@ -182,16 +221,11 @@ body {
     margin-left: 324px;
   }
 
-  
   }
   
   
   
   @media screen and (min-width: 1512px) {
-
-    .pageOne{
-      opacity: 60%;
-    }
     .cookies{
       display: block;
       border: 1px solid black;
@@ -205,6 +239,7 @@ body {
       z-index: 1;
       margin-right: 0;
       top: 21rem;
+      font-family: cookiesFont;
     }
     
     .accept{
@@ -214,6 +249,8 @@ body {
       color: yellow;
       border-radius: 10%; 
       align-items: center;
+      font-family: BoldFont;
+      text-transform: uppercase;
     }
 
     .reject{
@@ -223,6 +260,8 @@ body {
       color: white;
       border-radius: 10%;
       align-items: center;
+      font-family: BoldFont;
+      text-transform: uppercase;
     }
 
     .textImg{
@@ -294,6 +333,7 @@ body {
       line-height: 48px;
       margin: 0;
       margin-left: 30px;
+      font-family: BoldFont;
     }
   
     .container3{
@@ -331,6 +371,7 @@ body {
       font-size: 16px;
       text-transform: uppercase;
       margin: 0;
+      font-family: BoldFont;
     }
   
     input{
@@ -340,6 +381,7 @@ body {
       width: 200px;
       height: 20px;
       top: 3rem;
+      font-family: pageText;
     }
   
     .sign{
@@ -353,6 +395,7 @@ body {
       font-weight: 700;
       top: 3rem;
       text-transform: uppercase;
+      font-family: BoldFont;
     }
   
     .sign:hover{

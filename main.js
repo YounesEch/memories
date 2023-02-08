@@ -1,5 +1,6 @@
 const hamburger = document.querySelector('.menu');
 const navMenu = document.querySelector('#nav');
+const container= document.querySelector('.Container');
 
 hamburger.addEventListener('click', menuOpen);
 navMenu.addEventListener('click', navOpen);
@@ -8,6 +9,7 @@ function menuOpen () {;
   navMenu.classList.toggle('active');
   hamburger.classList.remove('active');
   hamburger.classList.toggle('rotate');
+  container.classList.toggle('transparentBackground');
 }
 
 function navOpen(){

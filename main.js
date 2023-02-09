@@ -28,10 +28,15 @@ const acceptBtn = document.querySelector('.accept');
 const rejectBtn = document.querySelector('.reject');
 
 acceptBtn.addEventListener('click', clearSite);
+rejectBtn.addEventListener("click", clearCookie);
 
 function clearSite () {
   cookieBox.classList.toggle('active');
   console.log(wrapper);
+}
+
+function clearCookie(){
+  cookieBox.classList.toggle('active');
 }
 
 /*
@@ -41,25 +46,21 @@ du klickar på signknappen
 signknappen ska avaktiveras, bli grå
 */
 
-const eMail = document.getElementById("email");
-const btnSubmit = document.getElementById("sign");
 
-btnSubmit.addEventListener("click", disableButton);
-let infoObject = [];
 
-btnSubmit.addEventListener("click", function(){
-  infoObject.push({
-    eMail: eMail.value
-  });
-});
+const inputEmail=document.querySelector(".email");
+const submitBtn=document.querySelector('.sign');
 
-function verifyEmail (inputtxt) {
-  let email = /[a-ö][1-10]@/;
-  if (inputtxt.value.match(email)) {
-    return true;
+submitBtn.addEventListener('keyup', buttonDisabled);
+submitBtn.disabled=true;
+
+
+function buttonDisabled() {
+  if (inputEmail.value === "") {
+      return true;
   } else {
-    return false;
+      submitBtn.classList.toggle("disabled");
+      return false;
   }
 }
-
 

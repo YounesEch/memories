@@ -357,6 +357,81 @@ footer{
     color: rgb(241, 10, 241);
     font-weight: bold;
   }
+
+  .wrapper{
+    z-index: 1;
+    background: rgba(18, 18, 18, 0.7);
+    height: 100vh;
+    position: relative;
+    bottom: 77vh;
+  }
+
+  .cookies{
+    display: block;
+    width: 480px;
+    height: 347px;
+    border-radius: 5%;
+    background-color: white;
+    position: absolute;
+    left: 35vw;
+    z-index: 2;
+    margin-right: 0;
+    top: 17rem;
+    font-family: cookiesFont;
+    opacity: 100%;
+  }
+
+  .cookies p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    position: relative;
+    top: 4rem;
+    color: black;
+    font-weight: 500;
+    font-family: BoldFonts;
+  }
+  
+  .accept{
+    width: 109px;
+    height: 28px;
+    background-color: #B30044;
+    border-radius: 20px;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFF500;
+    position: relative;
+    left: 22rem;
+    top: 7rem;
+    font-family: BoldFont;
+    text-transform: uppercase;
+  }
+
+  .reject{
+    font-family: BoldFont;
+    text-transform: uppercase;
+    width: 109px;
+    height: 28px;
+    background-color: #FF4B93;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .disabled{
+    color: #000;
+    background-color: #FFFFFF;
+    cursor: pointer;
+  }
   
   footer{
     display: block;

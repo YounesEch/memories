@@ -40,3 +40,26 @@ mejlkontot kontrolleras (rätt format)
 du klickar på signknappen
 signknappen ska avaktiveras, bli grå
 */
+
+const eMail = document.getElementById("email");
+const btnSubmit = document.getElementById("sign");
+
+btnSubmit.addEventListener("click", disableButton);
+let infoObject = [];
+
+btnSubmit.addEventListener("click", function(){
+  infoObject.push({
+    eMail: eMail.value
+  });
+});
+
+function verifyEmail (inputtxt) {
+  let email = /[a-ö][1-10]@/;
+  if (inputtxt.value.match(email)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+
